@@ -1,0 +1,145 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #2C3930;
+}
+
+b{
+    color: #85A947;
+}
+p{
+    margin-left: 7.5%;
+    max-width: 80%;
+    font-size: 25px;
+}
+.main-grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #2C3930;
+
+}
+.header{
+    font-size: 60px;
+    color: white;
+    font-family: 'Lora', serif;
+    text-align: center;
+    background-color: #3F4F44;
+}
+
+.header h1{
+    color: white;
+}
+.navbar{
+    background-color: #5D8736;
+    text-align: center;
+    padding: 10px;
+}
+.nav-container a{
+    font-family: 'Lora', serif;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 30px;
+}
+
+.vision-container{
+    color: white;
+    text-align: flex-start;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.vision-container h1{
+    margin-left:5%;
+    font-family: 'Lora', serif;
+}
+
+.background-image{
+    background-color: #2C3930;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.main-picture{
+    max-height: 650px;
+    max-width: 600px;
+    flex: 1; /*Makes sure images take equal space*/
+    display: flex;
+    justify-content: center;
+}
+
+.main-picture img{
+    object-fit: cover;
+    width: clamp(400px, 90%, 600px); /* Ensures the image stays between 200px and 600px */
+    height: 100%; /* Maintains aspect ratio */
+}
+
+.pricing-container{
+    padding: 20px; 
+    color: white;
+    font-family: 'Lora', serif;
+}
+.pricing-title{
+    font-size: 30px;
+    margin-left:5%;
+}
+.rescue-container{
+    padding: 20px; 
+    color: white;
+    font-family: 'Lora', serif;
+}
+.rescue-title{
+    font-size: 30px;
+    margin-left:5%;
+}
+.title{
+    padding: 20px;
+    font-size: 30px;
+    justify-content: flex-start; 
+    color: white;
+    font-family: 'Lora', serif;
+    margin-left:5%;
+}
+.our-team{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    margin-bottom: 20px;
+}
+.headshot{
+    padding:10px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    background-color: #3F4F44;
+    border:#5D8736 5px solid;
+    
+}
+
+.headshot img{
+    width: 200px;
+    height: 275px;
+}
+
+.contact-content{
+    margin-top:5%;
+    background-color:#5D8736;
+    padding:40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-content p,h1{
+    color: white;
+    font-family: 'Lora', serif;
+}
+.contact-content h1{
+    font-size: 60px;
+}
+.contact-content p{
+    font-size: 25px;
+    text-align: center;
+}

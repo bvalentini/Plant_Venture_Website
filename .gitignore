@@ -1,0 +1,27 @@
+# Environment variables & secrets
+.env
+.envrc
+.flaskenv
+
+# Virtual environments
+venv/
+plantVENV/
+
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# SQLite database (if applicable)
+*.db
+email.db
+
+# Flask instance folder (if used)
+instance/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# macOS-specific file
+.DS_Store

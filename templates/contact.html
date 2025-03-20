@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/contact.css">
+    <title>Document</title>
+</head>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <label>{{ form.email.label }}</label>
+    <br></br>{{ form.email() }} <br></br>
+    <label for="message">{{ form.message.label }}</label>
+    <br></br>{{ form.message(row=5, cols=40) }}<br></br>
+    {{ form.submit() }}<br></br>
+
+</form>
+
+<!--Flash Messages-->
+{% with messages = get_flashed_messages(with_categories=True) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            {% set color = 'green' if category == 'sucess' else 'red' %}
+            <p style="color: color;">
+                {{ message }}
+            </p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}

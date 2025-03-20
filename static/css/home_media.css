@@ -1,0 +1,106 @@
+
+/* Chat GPT Model: */
+/* ============================= */
+/* 📱 Media Queries for Responsiveness */
+/* ============================= */
+
+/* ✅ Tablets (max-width: 768px) */
+
+
+@media (max-width: 768px) {
+    .main-grid-container {
+        grid-template-columns: 1fr;  /* Stack all sections vertically */
+        gap: 15px;
+    }
+    .navbar {
+        padding: 15px;
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container a {
+        margin: 10px 0; /* Stack navigation links */
+    }
+    .main-picture{
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .main-picture img{
+        max-width: 100%;
+        max-height: 250px;
+    }
+
+    .headshot{
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .headshot img {
+        max-width: 250px;
+        max-height: 300px;
+    }
+}
+
+/* ✅ Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    h1{
+        font-size: 40px;
+    }
+    p{
+        max-width:100%;
+        margin-left:0%;
+        font-size: 20px
+    }
+    .header {
+        font-size: 16px; /* Reduce header text size */
+        padding: 15px;
+    }
+
+    .nav-container a {
+        font-size: 25px;  /* Smaller nav links */
+        margin: 8px 0;
+    }
+    .rescue-container{
+        margin-top: 7.5em;
+    }
+
+    .background-image {
+        height: 150px; /* Make background image smaller */
+    }
+    .headshot {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .headshot img {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+        width: 200px;
+        height: 250px;
+    }
+    .headshot-titles h3 {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .vision-container {
+        padding: 8px;
+    }
+
+    .conatct {
+        padding: 15px;
+        border-radius:10px;
+    }
+    .contact-content h1{
+    font-size: 40px;
+    }
+    .contact-content p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+}

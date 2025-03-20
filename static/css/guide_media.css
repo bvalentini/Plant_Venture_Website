@@ -1,0 +1,73 @@
+
+/* Chat GPT Model: */
+/* ============================= */
+/* 📱 Media Queries for Responsiveness */
+/* ============================= */
+
+/* ✅ Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .main-grid-container {
+        grid-template-columns: 1fr;  /* Stack all sections vertically */
+        gap: 15px;
+    }
+    .navbar {
+        padding: 15px;
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container a {
+        margin: 10px 0;
+    }
+    .plant img {
+        max-width: 300px; /* Adjust images to fit smaller screens */
+        max-height:300px;
+    }
+}
+
+/* ✅ Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    h1{
+        font-size: 40px;
+    }
+    p{
+        max-width:100%;
+        margin-left:0%;
+        font-size: 20px
+    }
+    .header {
+        font-size: 16px;  /* Smaller header text */
+        padding: 15px;
+    }
+
+    .navbar {
+        padding: 12px;
+    }
+
+    .nav-container a {
+        font-size: 25px;  /* Smaller nav links */
+        margin: 8px 0;
+    }
+
+    .plant {
+        padding: 15px;
+    }
+
+    .plant img {
+        max-width: 200px;  /* Ensure images use the full available width */
+        max-height: 200px;
+    }
+
+    .plant-info {
+        padding: 8px;  /* Adjust padding for smaller screens */
+    }
+
+    .plant-info h1{
+        font-size:60px;
+    }
+    .conatct {
+        padding: 15px;
+    }
+}

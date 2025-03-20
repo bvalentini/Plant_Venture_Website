@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:20px;
+    box-sizing: border-box;
+    background-color: #2C3930;
+
+}
+strong{
+    color: #A9C46C;
+    font-size: 25px;
+}
+
+li{
+    margin-left:7.5%;
+}
+.main-grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #2C3930;
+    
+}
+.header{
+    font-size: 60px;
+    color: white;
+    font-family: 'Lora', serif;
+    text-align: center;
+    background-color: #3F4F44;
+}
+.header h1{
+    color: white;
+}
+.navbar{
+    background-color: #5D8736;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.nav-container a{
+    font-family: 'Lora', serif;
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 30px;
+}
+
+.plant-info h1{
+    display: grid;
+    gap: 20px;
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 80px;
+    text-align:center;
+}
+.plant-info{
+    padding: 20px;
+    color: white;
+    background-color: #3F4F44;
+    margin-top:2.5%;
+    font-size: 20px;
+}
+.plant-image-container{
+    display: flex;
+    grid-template-columns:2fr;
+    justify-content:space-between;
+}
+.plant-info-image{
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;
+}
+
+.plant-info-image img{
+    width: 400px;
+    height: 300px;
+}
+
+.plant-info ol{
+    color:white;
+    line-height: 2em;
+    background-color:#5D8736;
+    padding:20px;
+    border-radius: 20px;
+}
+
+
+.plant-info h3{
+    margin-left:5%;
+    font-size: 40px;
+    font-family: 'Lora', serif;
+}
+
+.contact-content{
+    margin-top:5%;
+    background-color:#5D8736;
+    padding:40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-content p,h1{
+    color: white;
+    font-family: 'Lora', serif;
+}
+.contact-content h1{
+    font-size: 60px;
+}
+.contact-content p{
+    font-size: 25px;
+}

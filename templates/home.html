@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="static/css/home_media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Home</title>
+</head>
+
+<body> 
+    <div class="main-grid-container">
+        <div class="header">
+            <h1>Plants 4 Pups <i class="fa-solid fa-paw" style="color:#B17F59"></i></h1>
+        </div>
+
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('guide') }}">Instructions</a>
+            </div>
+        </nav>
+        <div class="vision-container">
+            <h1>About</h1>
+            <div class="vision-elements">
+                <!--Add a big quote "-->
+                <p style="text-indent: 40px;">Plants 4 Pups is a team of five passionate students from the Entreprenuership Program at <b>NAIT University</b>, bringing together a love for plants and
+                animals. We believe that greenery should be easy, affordable, and accessible to everyone, which is why we
+                offer sustainable, easy-to-grow seedlings at local farmers' markets. Each plant comes with simple care instructions,
+                making it perfect for both beginners and experienced gardeners alike.</p>
+                <p style="text-indent: 40px;">But we’re not just about plants—we’re about making a difference. <b>Every single dollar we raise goes directly to Zoe’s
+                Animal Rescue</b>, helping provide food, shelter, and medical care for animals in need. By purchasing a plant, you’re not
+                just adding some greenery to your space—you’re supporting a great cause.Together, we can grow a greener future while giving back to the animals that need us most. So come visit us, pick out a
+                plant, and help make an impact!</p>
+            </div>
+        </div>
+        <div class="pricing-container">
+            <div class="pricing-title">
+                <h1>Pricing</h1>
+            </div>
+            <div class="pricing-body">
+                <p style="text-indent: 40px;">Plants 4 Pups is offering a special deal—get <b>4 healthy plants for $20!</b>
+                    Every dollar from your purchase goes
+                    directly to <b>Zoe’s Animal Rescue</b>, helping provide care, shelter, and support for animals in need. Not
+                    only do you get to
+                    brighten up your space with fresh greenery, but you also make a meaningful difference in the lives of rescue
+                    pets. Buy a
+                    bundle today and support a great cause!</p>
+            </div>
+        </div>
+
+        <div class="background-image">
+            <div class="main-picture">
+                <img src="static/images/plant_background.jpeg" alt="greenhouse">
+            </div>
+            <div class="main-picture">
+                <img src="static/images/plant_background2.jpeg" alt="greenhouse">
+            </div>
+            <div class="main-picture">
+                <img src="static/images/plant_background4.jpeg" alt="greenhouse">
+            </div>
+
+        </div>
+        <div class="rescue-container">
+            <div class="rescue-title">
+                <h1>Zoe's Animal Rescue</h1>
+            </div>
+            <div class="rescue-body">
+                <p style="text-indent: 40px;">Zoe’s Animal Rescue is a <b>volunteer-run</b>, shelterless organization based in <b>Edmonton, Alberta</b>, dedicated to rescuing and
+                rehoming animals in need. Focused primarily on dogs and cats, the rescue operates without a physical shelter, relying on
+                foster homes to care for animals until they find their forever families. Volunteers play a crucial role in the
+                organization, providing not only care for the animals but also offering their skills and time for various tasks such as
+                transportation, social media, and fundraising. Zoe’s Animal Rescue aims to <b>prevent animal overpopulation</b> and <b>reduce the
+                number of animals in need </b>by promoting adoption and fostering. In addition to providing loving homes, the organization
+                advocates for responsible pet ownership, spaying, and neutering. With a strong commitment to animal welfare, Zoe’s
+                Animal Rescue is making a significant impact in the local community, giving abandoned and stray animals a chance at a
+                better life.</p>
+            </div>
+        </div>
+
+        <div class="title">
+            <h1>Team</h1>
+        </div>
+
+        <div class="our-team">
+                <div class="headshot">
+                    <img src="static/images/brayden.jpeg" alt="Brayden">
+                    <h3>Brayden</h3>
+                </div>
+                <div class="headshot">
+                    <img src="static/images/mya1.jpeg" alt="Mya">
+                    <h3>Mya</h3>
+                </div>
+                <div class="headshot">
+                    <img src="static/images/aaron.jpeg"alt="Aaron">
+                    <h3>Aaron</h3>
+                </div>
+                <div class="headshot">
+                    <img src="static/images/jared_william.jpeg" alt="Jared">
+                    <h3>Jared</h3>
+                </div>
+                <div class="headshot">
+                    <img src="static/images/sean_yves.jpeg" alt="Sean">
+                    <h3>Sean</h3>
+                </div>
+        </div>
+
+        <div class="conatct">
+            <div class="contact-content">
+            <h1>Connect</h1>
+            <p>If you have any questions, please feel free to reach out to our team!</p>
+            {% include 'contact.html' %}
+        </div>
+
+    </div>
+</body>
+</html>
