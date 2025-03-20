@@ -86,5 +86,16 @@
     strong{
         font-size: 22.5px;
     }
+        .conatct {
+        padding: 15px;
+        border-radius:10px;
+    }
+    .contact-content h1{
+    font-size: 40px;
+    }
+    .contact-content p{
+        font-size: 20px;
+        text-align: center;
+    }
     
 }
