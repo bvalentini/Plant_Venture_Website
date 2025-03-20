@@ -123,7 +123,11 @@ p{
     width: 200px;
     height: 275px;
 }
-
+.headshot a{
+    text-decoration: None;
+    color: #5D8736;
+    font-size: 20px;
+}
 .contact-content{
     margin-top:5%;
     background-color:#5D8736;
