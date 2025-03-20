@@ -15,8 +15,9 @@ app = Flask(__name__)
 # Hide key in hash table before psoting
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
+
 # Configure database using environment variable
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv('DATABASE_URL')
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv('DATABASE_URL', 'sqlite:///default.db')
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 
