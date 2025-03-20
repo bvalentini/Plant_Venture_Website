@@ -5,6 +5,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField,TextAreaField
 from wtforms.validators import DataRequired, Email, ValidationError
 from flask_sqlalchemy import SQLAlchemy 
+from flask_migrate import Migrate
 from sqlalchemy import Column, String, Integer
 from dotenv import load_dotenv
 
@@ -22,7 +23,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 
 db = SQLAlchemy(app)
-
+migrate = Migrate(app, db)
 
 # db model 
 class EmailEntry(db.Model):
@@ -45,7 +46,7 @@ def validate_email_address(field):
         # validate email using the email_validator package 
         validate_email(field.data)
     except EmailNotValidError as e: 
-        raise ValueError("Invalid email addresss.")
+        raise ValidationError("Invalid email addresss.")
 
 # Flask-WTF form 
 class EmailForm(FlaskForm):
