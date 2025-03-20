@@ -29,6 +29,10 @@
 
 /* ✅ Mobile Phones (max-width: 480px) */
 @media (max-width: 480px) {
+    .main-grid-container {
+        grid-template-columns: 1fr;  /* Stack all sections vertically */
+        gap: 15px;
+    }
     h1{
         font-size: 40px;
     }
